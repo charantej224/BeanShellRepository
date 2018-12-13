@@ -1,0 +1,5 @@
+script:
+  files: addition.bsh
+  
+server:
+  port: 1200

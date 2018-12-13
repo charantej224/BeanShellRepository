@@ -1,0 +1,5 @@
+package com.charan.captcha.controllers;
+
+public class BeanShellController {
+
+}

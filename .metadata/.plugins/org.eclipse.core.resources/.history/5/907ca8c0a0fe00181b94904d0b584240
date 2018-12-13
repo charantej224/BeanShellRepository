@@ -1,0 +1,23 @@
+package com.charan.captcha.configuration;
+
+import java.io.Reader;
+import java.util.HashMap;
+import java.util.Map;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class AppContextConfiguration {
+	
+	private Map<String,Reader> scriptFactory = new HashMap<>();
+
+	
+	public Map<String, Reader> getScriptFactory() {
+		return scriptFactory;
+	}
+
+	public void setScriptFactory(Map<String, Reader> scriptFactory) {
+		this.scriptFactory = scriptFactory;
+	}
+	
+}

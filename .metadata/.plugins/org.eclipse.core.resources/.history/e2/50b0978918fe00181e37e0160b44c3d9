@@ -1,0 +1,50 @@
+package com.charan.captcha;
+
+import java.lang.reflect.Method;
+
+import org.json.simple.JSONObject;
+
+import com.fasterxml.jackson.core.JsonParser;
+import com.fasterxml.jackson.databind.util.JSONPObject;
+
+
+public class mainClass {
+
+	
+	public static void main(String[] args ) throws Exception {
+		
+		String value = "{\n" + 
+				"    \"key:\"value\",\n" + 
+				"    \"value\":\"something\",\n" + 
+				"    \"something\":\"otherSomething\"\n" + 
+				"}";
+		//JsonPath.parse(value).add("$.value1", "value1");
+		JSONObject jsonObject = new JSONObject();
+		JsonParser parser = new JsonParser();
+		
+//		ObjectMapper objectMapper = new ObjectMapper();
+//		UserDetails userDetails = new UserDetails();
+//		userDetails.setBirthDate(LocalDate.now());
+//		userDetails.setMyInfoVerified(MyInfoStatus.REJECTED);
+//		System.out.println(objectMapper.writeValueAsString(userDetails));
+		
+//		String className = "com.charan.captcha.ReflectionTest";
+//		Object object = Class.forName(className).newInstance();
+//		Method method = object.getClass().getDeclaredMethod("getResponse", String.class);
+//		String value = (String) method.invoke(object, "Charan, Its me!");
+//		System.out.println(value);
+//		
+//		Method method1 = object.getClass().getDeclaredMethod("getStaticResponse", String.class);
+//		String value1 = (String) method1.invoke(Class.forName(className), "Charan, Its me!");
+//		System.out.println(value1);
+//		
+//		String setClassName = "com.charan.captcha.SetReflectionTest";
+//		Object object2 = Class.forName(setClassName).newInstance();
+//		Method method2 = object2.getClass().getDeclaredMethod("setValue", String.class);
+//		method2.invoke(object2, (String) method.invoke(object, "Charan, Its me!"));
+//		Method method3 = object2.getClass().getDeclaredMethod("getValue");
+//		System.out.println(method3.invoke(object2));
+		
+	}
+}
+

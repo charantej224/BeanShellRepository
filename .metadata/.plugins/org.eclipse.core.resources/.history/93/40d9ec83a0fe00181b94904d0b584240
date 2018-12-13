@@ -1,0 +1,26 @@
+package com.charan.captcha.configuration;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.core.io.ResourceLoader;
+import org.springframework.stereotype.Component;
+
+@Component
+public class ScriptLoader {
+	
+	@Autowired
+	ResourceLoader resourceLoader;
+	
+	@Autowired
+	AppContextConfiguration appContext;
+	
+	@Value("${script.files}")
+	String[] scriptFiles;
+	
+	
+	public void loadScriptFiles() {
+		
+	}
+	
+
+}

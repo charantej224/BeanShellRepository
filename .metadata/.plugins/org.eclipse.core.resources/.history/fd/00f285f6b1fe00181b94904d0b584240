@@ -1,0 +1,21 @@
+package com.charan.shell.controllers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.charan.captcha.configuration.AppContextConfiguration;
+
+@RestController
+public class BeanShellController {
+	
+	@Autowired
+	AppContextConfiguration configuration;
+	
+	@GetMapping("/getShellResponse")
+	public String getResponse(@RequestParam String script) {
+		return configuration.getScriptFactory().get(script);
+	}
+
+}

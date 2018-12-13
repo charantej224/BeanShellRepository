@@ -1,0 +1,13 @@
+package com.charan.captcha;
+
+public class ReflectionTest {
+
+	public String getResponse(String value) {
+		return value;
+	}
+	
+	public static getStaticResponse(String value) {
+		return value;
+	}
+
+}

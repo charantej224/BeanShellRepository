@@ -1,0 +1,14 @@
+package com.charan.shell;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class ShellServiceApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(ShellServiceApplication.class, args);
+	}
+
+}
+

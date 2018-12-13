@@ -1,0 +1,21 @@
+package com.charan.captcha;
+
+import java.time.LocalDate;
+
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+public class mainClass {
+
+	
+	public static void main(String[] args ) throws JsonProcessingException {
+		
+		ObjectMapper objectMapper = new ObjectMapper();
+		UserDetails userDetails = new UserDetails();
+		userDetails.setBirthDate(LocalDate.now());
+		userDetails.setMyInfoVerified(null);
+		System.out.println(objectMapper.writeValueAsString(userDetails));
+		
+	}
+}
+

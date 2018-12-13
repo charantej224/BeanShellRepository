@@ -1,0 +1,11 @@
+package com.charan.captcha.configuration;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class AppContextConfiguration {
+	
+	private Map<String,Reader> scriptFactory = new HashMap<>();
+	
+	
+}

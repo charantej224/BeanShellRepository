@@ -1,0 +1,24 @@
+package com.charan.captcha;
+
+import java.lang.reflect.Method;
+
+public class mainClass {
+
+	
+	public static void main(String[] args ) throws Exception {
+		
+//		ObjectMapper objectMapper = new ObjectMapper();
+//		UserDetails userDetails = new UserDetails();
+//		userDetails.setBirthDate(LocalDate.now());
+//		userDetails.setMyInfoVerified(MyInfoStatus.REJECTED);
+//		System.out.println(objectMapper.writeValueAsString(userDetails));
+		
+		String className = "com.charan.captcha.ReflectionTest";
+		Object object = Class.forName(className).newInstance();
+		Method method = object.getClass().getDeclaredMethod("getResponse", String.class);
+		String value = (String) method.invoke(object, "Charan, Its me!");
+		System.out.println(value);
+		
+	}
+}
+

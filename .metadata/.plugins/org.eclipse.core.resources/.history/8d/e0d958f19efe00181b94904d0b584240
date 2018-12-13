@@ -1,0 +1,5 @@
+package com.charan.captcha.configuration;
+
+public class AppContextConfiguration {
+
+}

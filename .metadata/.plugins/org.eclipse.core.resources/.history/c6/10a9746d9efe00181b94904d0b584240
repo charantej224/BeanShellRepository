@@ -1,0 +1,12 @@
+package com.charan.captcha.configuration;
+
+import org.springframework.core.io.ResourceLoader;
+import org.springframework.stereotype.Component;
+
+@Component
+public class ScriptLoader {
+	
+	@Autowired
+	ResourceLoader resourceLoader;
+
+}
