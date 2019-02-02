@@ -1,5 +1,5 @@
 script:
-  files: addition.bsh
+  files: addition.bsh,manupulation.groovy
   
 server:
   port: 8081
